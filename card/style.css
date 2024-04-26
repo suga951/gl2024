@@ -4,30 +4,35 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #212121;
+}
+
 .card-container {
     display: flex;
     flex-direction: column;
     height: 90svh;
     width: 90%;
     margin: 5svh auto;
-    background-color: rgb(117, 170, 219);
+    background-color: #fafafa;
     border-radius: 25px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgb(124, 124, 124) 0px 10px 30px -10px;
 }
 
-.header-img-container{
-    border-bottom:20px;
+#header-container {
+    height: 30svh;
+
 }
+
 #header-img {
     width: 100%;
-    height: 30svh;
+    height: 100%;
     border-radius: 25px 25px 0px 0px;
     object-fit: cover;
     object-position: 0% 22%;
 }
 
 #profile-pic-container {
-    background-color: #fafafa;
     border-radius: 50%;
     width: 25svh;
     height: 25svh;
@@ -36,21 +41,20 @@
     right: 0;
     left: 0;
     margin: 0 auto;
-    z-index: 1;
+    padding: 0.5svg
 }
 
 #profile-pic {
+    background-color: #fafafa;
     position: relative;
     border-radius: 50%;
     object-fit: cover;
     width: 100%;
     height: 100%;
     padding: 0.5svh;
-    z-index: 1;
 }
 
 .header {
-    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,13 +70,16 @@
     position: absolute;
     width: 80%;
     margin: 0 auto;
+    left: 0;
+    right: 0;
     top: 42svh;
-    opacity: 0.15;
+    opacity: 0.10;
     z-index: 0;
 }
 
 #name {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
     font-family: "Roboto", sans-serif;
 }
 
