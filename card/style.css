@@ -12,8 +12,12 @@
     margin: 5svh auto;
     background-color: rgb(117, 170, 219);
     border-radius: 25px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
+.header-img-container{
+    border-bottom:20px;
+}
 #header-img {
     width: 100%;
     height: 30svh;
@@ -32,6 +36,7 @@
     right: 0;
     left: 0;
     margin: 0 auto;
+    z-index: 1;
 }
 
 #profile-pic {
@@ -41,8 +46,8 @@
     width: 100%;
     height: 100%;
     padding: 0.5svh;
+    z-index: 1;
 }
-
 
 .header {
     background-color: aliceblue;
@@ -51,14 +56,23 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 15svh;
+    height: 11svh;
     margin-top: 10svh;
     padding: 2svh;
 
 }
 
+#leo-10-bg {
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    top: 42svh;
+    opacity: 0.15;
+    z-index: 0;
+}
+
 #name {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: "Roboto", sans-serif;
 }
 
@@ -68,28 +82,28 @@
     font-style: italic;
 }
 
-.bio{
+.bio {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0.3svh;
+    text-align: justify;
+    padding: 0.3svh;
 }
-#bio-text{
+
+#bio-text {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
-    padding:1svh;
+    padding: 1svh;
 }
 
-.socials-container{
+.socials-container {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
-#x-icon, #fb-icon, #ig-icon{
-    height: 3svh;
-    width: 3svh;
-    margin-left: 2svh;
-    margin-right:2svh;
-    margin-bottom: 1svh;
+#www-icon, #fb-icon, #ig-icon {
+    height: 4svh;
+    width: 4svh;
+    margin: 1svh 2svh;
 }
