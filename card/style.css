@@ -21,7 +21,6 @@ body {
 
 #header-container {
     height: 30svh;
-
 }
 
 #header-img {
@@ -41,7 +40,7 @@ body {
     right: 0;
     left: 0;
     margin: 0 auto;
-    padding: 0.5svg
+    z-index: 2;
 }
 
 #profile-pic {
@@ -65,16 +64,6 @@ body {
     padding: 1svh;
 }
 
-#leo-10-bg {
-    position: absolute;
-    width: 80%;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 45svh;
-    opacity: 0.19;
-}
-
 #name, #at-name, #bio-text {
     font-family: "Roboto", sans-serif;
 }
@@ -94,20 +83,68 @@ body {
     justify-content: center;
     align-items: center;
     text-align: justify;
-    padding: 0.3svh;
+    height: 30svh;
     font-size: 1rem;
-    padding: 1svh;
+    padding: 2svh;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .socials-container {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    padding: 2svh 0;
+    height: 8svh;
+    padding: 1svh 0;
 }
 
 #www-icon, #fb-icon, #ig-icon {
     height: 4svh;
     width: 4svh;
     margin: 1svh 2svh;
+}
+
+#www-icon, #fb-icon, #ig-icon:hover {
+    cursor: pointer;
+}
+
+/* media queries*/
+@media (min-width: 576px) {
+    .bio {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .bio {
+        font-size: 1.4rem;
+    }
+
+    #leo-10-bg {
+        top: 40svh;
+        scale: 0.9;
+    }
+}
+
+@media (min-width:992px) {
+    .card-container {
+        width: 30%;
+    }
+
+    .header {
+        height: 18svh;
+    }
+
+    .bio {
+        height: 25svh;
+        font-size: 0.6rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .card-container {
+        width: 30%;
+
+    }
 }
