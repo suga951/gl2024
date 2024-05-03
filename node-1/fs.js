@@ -11,7 +11,7 @@ let evenNumbers = 0;
 let notEven = 0;
 const verifyEven = (array) => {
   array.forEach((num) => {
-    num % 2 === 0 ? evenNumbers++ : notEven;
+    num % 2 === 0 ? evenNumbers++ : notEven++;
   });
 };
 
